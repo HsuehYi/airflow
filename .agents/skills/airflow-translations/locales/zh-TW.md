@@ -158,20 +158,18 @@ word order:
 "title": "標記 {{類型}} 為 {{狀態}}"
 ```
 
-## Terminology Reference
+## Existing Translations and Terminology
 
-The established zh-TW translations are defined in the existing locale files.
-Before translating, **read the existing zh-TW JSON files** to learn the
-established terminology:
+Before translating, check the existing zh-TW locale files under
+`airflow-core/src/airflow/ui/public/i18n/locales/zh-TW/` for the same or
+similar terms and reuse the established translation. These files are the
+authoritative glossary.
 
-```
-airflow-core/src/airflow/ui/public/i18n/locales/zh-TW/
-```
-
-Use the translations found in these files as the authoritative glossary. When
-translating a term, check how it has been translated elsewhere in the locale
-to maintain consistency. If a term has not been translated yet, refer to the
-English source in `en/` and apply the rules in this document.
+The English source in `en/` is the primary reference for meaning — translate
+from it first. Once you have a draft, check how the same key was translated in the
+other `locales/` folders. A different approach there is not a reason to switch
+on its own, but it is a reason to think again: go back to the English string
+and decide whether the difference points at something you missed.
 
 ### Additional Terminology
 
